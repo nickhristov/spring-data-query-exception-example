@@ -26,4 +26,6 @@ public class OrderDocument {
 
     private Integer shipmentCount;
 
+    private Customer customer;
+
 }

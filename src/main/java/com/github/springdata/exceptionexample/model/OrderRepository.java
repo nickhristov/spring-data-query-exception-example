@@ -10,4 +10,6 @@ import java.util.concurrent.CompletableFuture;
 public interface OrderRepository extends MongoRepository<OrderDocument, ObjectId> {
 
     CompletableFuture<List<OrderDocument>> findByOrderIdIn(List<UUID> ids);
+
+    CompletableFuture<List<OrderDocument>> findByCustomerId(Long id);
 }

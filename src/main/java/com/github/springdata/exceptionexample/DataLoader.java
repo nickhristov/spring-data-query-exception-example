@@ -26,5 +26,9 @@ public class DataLoader implements ApplicationRunner {
         for(int i = 0; i < 1000; i++) {
             repository.findByOrderIdIn(ids).thenAccept(list->{});
         }
+
+        for(int i = 0; i < 1000; i++) {
+            repository.findByCustomerId(100L).thenAccept(list->{});
+        }
     }
 }
